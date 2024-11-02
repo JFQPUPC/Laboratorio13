@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let operacionDeseada = prompt("Digite la operación deseada (suma, resta, multiplicacion, division)");
+        let numero1 = parseFloat(prompt("Digite el primer numero: "));
+        let numero2 = parseFloat(prompt("Digite el segundo numero: "));
+        let resultado;
+        
+        function calculadora(operacionDeseada, numero1, numero2)
+            {
+                if(operacionDeseada == "suma")
+                    {
+                        resultado = numero1 + numero2;
+                    }
+                else
+                if (operacionDeseada == "resta")
+                    {
+                        resultado = numero1 - numero2;
+                    }
+                else
+                if (operacionDeseada == "multiplicacion")
+                    {
+                        resultado = numero1 * numero2;
+
+                    }
+                else
+                if (operacionDeseada == "division")
+                    {
+                        resultado = numero1 / numero2;
+                    }
+                    
+                return resultado; 
+
+            }
+
+        resultado = calculadora(operacionDeseada, numero1, numero2);
+
+        console.log("La operacion calculada", operacionDeseada, "da como resultado " + resultado);
+
+    </script>
+</body>
+</html>
