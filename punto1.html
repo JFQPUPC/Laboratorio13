@@ -8,19 +8,27 @@
 <body>
     <script>
 
-        let radio = 5;
-        let area = 0;
+        let num = 5;
+        let numPoI;
         
-        function calcularArea(radio)
+        function definirParoImpar(num)
             {
-                area = Math.PI * (radio * radio);
-                return area; 
+                if(num % 2 == 0)
+                    {
+                        numPoI = "par";
+                    }
+                else
+                    {
+                        numPoI = "impar";
+                    }
+                    
+                return numPoI; 
 
             }
 
-        area = calcularArea(radio);
+        numPoI = definirParoImpar(num);
 
-        console.log("El area del circulo es ", area);
+        console.log("El numero es ", numPoI);
 
     </script>
 </body>
