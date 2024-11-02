@@ -7,12 +7,12 @@
 </head>
 <body>
     <script>
+        let numero1 = parseFloat(prompt("Digite el primer numero en la calculadora: "));
+        let numero2 = parseFloat(prompt("Digite el segundo numero en la calculadora: "));
         let operacionDeseada = prompt("Digite la operación deseada (suma, resta, multiplicacion, division)");
-        let numero1 = parseFloat(prompt("Digite el primer numero: "));
-        let numero2 = parseFloat(prompt("Digite el segundo numero: "));
         let resultado;
         
-        function calculadora(operacionDeseada, numero1, numero2)
+        function calculadora(numero1, numero2, operacionDeseada)
             {
                 if(operacionDeseada == "suma")
                     {
@@ -39,7 +39,7 @@
 
             }
 
-        resultado = calculadora(operacionDeseada, numero1, numero2);
+        resultado = calculadora(numero1, numero2, operacionDeseada);
 
         console.log("La operacion calculada", operacionDeseada, "da como resultado " + resultado);
 
