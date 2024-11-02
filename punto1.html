@@ -8,27 +8,42 @@
 <body>
     <script>
 
-        let num = 6;
-        let numPoI;
+        let user = "Jhon"
+        let operacionDeseada = prompt("Digite la operación deseada señor ", user, "(s, r, m, d)");
+        let numero1 = parseInt(prompt("Digite el primer numero señor ", user ));
+        let numero2 = parseInt(prompt("Digite el segundo numero señor ", user ));
+        let resultado;
         
-        function definirParoImpar(num)
+        function operacion(operacionDeseada, numero1, numero2)
             {
-                if(num % 2 == 0)
+                if(operacionDeseada == "suma")
                     {
-                        numPoI = "par";
+                        resultado = numero1 + numero2;
                     }
                 else
+                if (operacionDeseada = "resta")
                     {
-                        numPoI = "impar";
+                        resultado = numero1 - numero2;
+                    }
+                else
+                if (operacionDeseada = "multiplicacion")
+                    {
+                        resultado = numero1 * numero2;
+
+                    }
+                else
+                if (operacionDeseada = "division")
+                    {
+                        resultado = numero1 / numero2;
                     }
                     
-                return numPoI; 
+                return resultado; 
 
             }
 
-        numPoI = definirParoImpar(num);
+        resultado = operacion(operacionDeseada);
 
-        console.log("El numero es", numPoI);
+        console.log("La operacion", operacionDeseada, " da como resultado", resultado);
 
     </script>
 </body>
