@@ -7,11 +7,9 @@
 </head>
 <body>
     <script>
-
-        let user = "Jhon"
-        let operacionDeseada = prompt("Digite la operación deseada señor ", user, "(s, r, m, d)");
-        let numero1 = parseInt(prompt("Digite el primer numero señor ", user ));
-        let numero2 = parseInt(prompt("Digite el segundo numero señor ", user ));
+        let operacionDeseada = prompt("Digite la operación deseada (suma, resta, multiplicacion, division)");
+        let numero1 = parseFloat(prompt("Digite el primer numero: "));
+        let numero2 = parseFloat(prompt("Digite el segundo numero: "));
         let resultado;
         
         function operacion(operacionDeseada, numero1, numero2)
